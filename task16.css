@@ -1,0 +1,169 @@
+/* Universal Styles */
+
+body {
+    margin: 0;
+    background-color: #f8f9fc;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #4a4a4a;
+  }
+  
+  .secondary-background {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tagline {
+    font-family: 'Poppins', sans-serif;
+    color: #6c757d;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+  
+  /* Header */
+  #Header{
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+  }
+  h1 {
+    margin: 0;
+    background-color: #6a0dad; /* Purple */
+    line-height: 100px;
+    color: #ffffff; /* White */
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+  }
+  
+  h2 {
+    margin: 10px;
+    font-size: 20px;
+    color: #6c757d;
+  }
+  
+  /* App Container */
+  
+  .container {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* To Do Section */
+  
+  .week {
+    display: inline-flex;
+    flex-grow: 3;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .row {
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .square {
+    width: 125px;
+    height: 125px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .square:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .day.square {
+    background-color: #6a0dad; /* Purple */
+    border: 1px solid #ffffff;
+    color: #ffffff; /* White */
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .task.square {
+    background-color: #d8bfd8; /* Light Purple */
+    border: 1px solid #ffffff;
+    color: #4a4a4a;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .task p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  /* Reminders */
+  
+  .reminders {
+    background-color: #d8bfd8; /* Light Purple */
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reminders h3 {
+    width: 100%;
+    margin: 10px;
+    color: #4a4a4a;
+    line-height: 90px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  
+  footer {
+    font-size: 18px;
+    color: #6c757d;
+    padding: 10px;
+    background-color: #f8f9fc;
+    border-top: 2px solid #e9ecef;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer .tagline {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Animations */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container, .week, .row, .square, .reminders, footer {
+    animation: fadeIn 0.8s ease-in-out;
+  }
